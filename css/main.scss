@@ -11,6 +11,19 @@ $small-width: 480px;
 
 // Basic
 
+div.highlight{
+    overflow-x: auto;
+    background-color: #ffe6e6;
+    border-radius: 11px;
+    border: 1.5px solid #c5c5c5
+}
+
+img {
+    vertical-align: middle;
+ // border: 1.5px solid #060606;
+    border-radius: 12px 12px;
+}
+
 body {
     margin: 0;
     font-family: "Inconsolata";
