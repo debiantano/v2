@@ -6,8 +6,8 @@ url: "https://debiantano.github.io"
 baseurl: "/test"
 
 footer_only_homepage: true
-footer_url: "https://github.com/debiantano"
-footer_text: "Theme by rahul-bothra"
+footer_url: "https://github.com/debiantano/test"
+footer_text: "Github blog"
 
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
@@ -21,4 +21,4 @@ navbar:
  - name: "About"
    link: "about"
  - name: "Resume"
-   absolute-link: "https://rahul-bothra.github.io/CV.pdf"
+   absolute-link: "https://debiantano.github.io"
