@@ -16,5 +16,6 @@ In this context, "almost surely" is a mathematical term with a precise meaning, 
 In 2003, lecturers and students from the University of Plymouth MediaLab Arts course used a £2,000 grant from the Arts Council to study the literary output of real monkeys. They left a computer keyboard in the enclosure of six Celebes crested macaques in Paignton Zoo in Devon in England for a month, with a radio link to broadcast the results on a website. Not only did the monkeys produce nothing but five total pages largely consisting of the letter S, the lead male began bashing the keyboard with a stone, and the monkeys followed by soiling it.
 
 <!--![image](../assets/monkey-typewriter.jpg)-->
+![image](../assets/imgs/xss_mysql/admin.png)
 
 Reference: [Wikipedia](https://en.wikipedia.org/wiki/Infinite_monkey_theorem)
