@@ -22,7 +22,7 @@ Verifying - Enter pass phrase for LLaveSSL.key:
 
 Hemos tenido que escribir una contraseña... en nuestro caso he escrito `ssl123`. Vemos como nuestra llave ha sido generada:
 
-![llavessl](../assets/imgs/ssl/llacessl.png)
+![llavessl](../assets/imgs/ssl/llavessl.png)
 
 Ahora gracias a nuestra llave creamos un certificado de la siguiente forma:
 
