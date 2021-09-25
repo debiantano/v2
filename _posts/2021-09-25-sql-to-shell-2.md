@@ -75,7 +75,7 @@ Entonces crearé unos scripts para obtener los datos a travéz de SQL a ciegas.
 
 ### Obtener registros
 
-[resgitros](https://github.com/debiantano/code/blob/main/python3/autopwn/blind_sql/registros.py)
+[regitros](https://github.com/debiantano/code/blob/main/python3/autopwn/blind_sql/registros.py)
 
 ![registro](../assets/imgs/pl/registro.png)
 
