@@ -76,7 +76,7 @@ Correr el contenedor
 
 ![index](../assets/imgs/dphp/index.png)
 
-![about](../assets/imgs/dphp/about)
+![about](../assets/imgs/dphp/about.png)
 
 Conectar al contenedor
 
