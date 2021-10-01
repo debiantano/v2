@@ -2,7 +2,7 @@
 layout: post
 title: Docker - PHP
 subtitle: "Docker - PHP"
-tags: [Docker,php]
+tags: [docker,php]
 ---
 
 | argumento | descripción                                   |

@@ -2,7 +2,7 @@
 layout: post
 title: From QSL to Shell II
 subtitle: "From QSL to Shell II"
-tag: [python,SQLi]
+tag: [python,sqli]
 ---
 
 ## Puertos abiertos
