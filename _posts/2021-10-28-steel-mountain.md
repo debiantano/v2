@@ -264,6 +264,7 @@ WINRM       10.10.15.81     5985   NONE             [+] None\bill:PMBAf5KhZAxVhv
 
 ![rm](../assets/imgs/steel/rm.png)
 
+
 ### Acceso por RDP
 
 ```
