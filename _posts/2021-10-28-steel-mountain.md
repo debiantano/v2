@@ -262,7 +262,7 @@ WINRM       10.10.15.81     5985   NONE             [*] http://10.10.15.81:5985/
 WINRM       10.10.15.81     5985   NONE             [+] None\bill:PMBAf5KhZAxVhvqb (Pwn3d!)
 ```
 
-![rm](../assets/imgs/steel/rm.png)
+![rm](../assets/imgs/stell/rm.png)
 
 
 ### Acceso por RDP
@@ -301,9 +301,9 @@ SMB         10.10.15.81     445    STEELMOUNTAIN    [*] Windows Server 2012 R2 D
 SMB         10.10.15.81     445    STEELMOUNTAIN    [+] steelmountain\administrator 53dbf27b0f37b1ef784c8a4768c0e9fa (Pwn3d!)
 ```
 
-Accediendo como administrador
+Accediendo como administrador.
 
-![admin](../assets/imgs/steel/admin.png)
+![admin](../assets/imgs/stell/admin.png)
 
 
 Otra forma de accesder por `rdp` es pasando el hash.
