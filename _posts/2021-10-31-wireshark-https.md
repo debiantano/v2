@@ -23,7 +23,7 @@ Podemos comenzar a analizar el tráfico HTTPS mirando los paquetes para el proto
 
 A continuación se muestra el paquete **Server Hello** que envía información similar al paquete Client Hello, sin embargo, esta vez incluye detalles de la sesión e información del certificado `SSL`
 
-![2](../assets/imgs/imgs/wire/2.png)
+![2](../assets/imgs/wire/2.png)
 
 A continuación se muestra el paquete de intercambio de claves de cliente, esta parte del protocolo de enlace determinará la **clave pública** que se utilizará para cifrar más mensajes entre el cliente y el servidor.
 
