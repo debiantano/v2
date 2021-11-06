@@ -5,6 +5,8 @@ subtitle: Wireshark https
 tags: [wireshark,network,wifi]
 ---
 
+## HTTPS
+
 **HTTPS** o Hypertext Transfer Protocol Secure puede ser uno de los protocolos más molestos de comprender desde la perspectiva del análisis de paquetes y puede resultar confuso comprender los pasos necesarios para analizar los paquetes HTTPS.
 
 
@@ -73,4 +75,77 @@ Al observar los detalles del paquete, podemos ver información muy importante, c
 Ahora podemos usar otras funciones para organizar el flujo de datos, como usar la función de exportación de objetos HTTP , para acceder a esta función, navegue hasta Archivo> Exportar objetos> HTTP
 
 ![11](../assets/imgs/wire/11.png)
+
+----
+
+## DNS
+
+### Descripción general de DNS
+
+El protocolo DNS o Servicio de nombres de dominio se utiliza para resolver nombres con direcciones IP.  
+Hay un par de cosas que se describen a continuación que debe tener en cuenta al analizar los paquetes DNS .
+
+- Consulta-Respuesta
+- Solo servidores DNS
+- UDP
+
+Si alguno de estos está fuera de lugar, los paquetes deben examinarse más a fondo y deben considerarse sospechosos.  
+A continuación, podemos ver una captura de paquetes con múltiples consultas y respuestas de DNS .
+
+![dns](../assets/imgs/wire/dns.png)
+
+Mirando instantáneamente los paquetes, podemos ver lo que están consultando, esto puede ser útil cuando tiene muchos paquetes y necesita identificar rápidamente el tráfico sospechoso o inusual.
+
+----
+
+## Descripción general del tráfico DNS
+
+**Consulta de DNS :**
+
+Mirando la consulta a continuación, realmente tenemos dos bits de información que podemos usar para analizar el paquete. El primer bit de información que podemos ver es de dónde se origina la consulta, en este caso, es UDP 53, lo que significa que este paquete pasa esa verificación, si era TCP 53, entonces debe considerarse tráfico sospechoso y debe analizarse. más lejos. También podemos ver lo que está consultando, esto puede ser útil con otra información para construir una historia de lo que sucedió.
+
+![dns2](../assets/imgs/wire/dns2.png)
+
+Al analizar los paquetes DNS , realmente necesita comprender su entorno y si el tráfico se consideraría normal o no dentro de su entorno.
+
+Respuesta de DNS :
+
+A continuación vemos un paquete de respuesta, es similar al paquete de consulta, pero también incluye una respuesta que se puede usar para verificar la consulta.
+
+![dns3](../assets/imgs/wire/dns3.png)
+
+----
+
+## Modelo OSI
+
+Esta sección cubre cómo Wireshark usa capas OSI para dividir paquetes y cómo usar estas capas para análisis. Se espera que ya tenga conocimientos básicos sobre qué es el modelo OSI y cómo funciona.
+
+![osi](../assets/imgs/wire/osi.png)
+
+Detalles del paquete:  
+Puede hacer doble clic en un paquete en captura para abrir sus detalles. Los paquetes constan de 5 a 7 capas según el modelo OSI. Los repasaremos todos en un paquete HTTP de una captura de muestra.
+
+![osi1](../assets/imgs/wire/osi1.png)
+
+Mirando arriba podemos ver 6 capas distintas del paquete: marco/paquete, fuente [MAC], fuente [IP], protocolo, errores de protocolo, protocolo de aplicación y datos de aplicación. A continuación, repasaremos las capas con más detalle.
+
+**Cuadro (Capa 1)**: esto le mostrará qué cuadro / paquete está mirando, así como detalles específicos de la capa física del modelo OSI.
+
+![osi2](../assets/imgs/wire/osi2.png)
+
+**Fuente [MAC] (Capa 2)**: Esto le mostrará las direcciones `MAC` de origen y destino; de la capa de enlace de datos del modelo OSI.
+
+![osi3](../assets/imgs/wire/osi3.png)
+
+**Fuente [IP] (Capa 3)**: esto le mostrará las direcciones IPv4 de origen y destino; desde la capa de red del modelo OSI.
+
+![osi4](../assets/imgs/wire/osi4.png)
+
+**Protocolo (Capa 4)**: le mostrará los detalles del protocolo utilizado (UDP / TCP) junto con los puertos de origen y destino; de la capa de transporte del modelo OSI.
+
+![osi5](../assets/imgs/wire/osi5.png)
+
+**Protocolo de aplicación (capa 5)**: mostrará detalles específicos del protocolo que se está utilizando, como HTTP , FTP, SMB, etc. Desde la capa de aplicación del modelo OSI.
+
+![osi6](../assets/imgs/wire/osi6.png)
 
