@@ -3,6 +3,7 @@ layout: post
 title: OpenGL
 subtitle: OpenGL
 post: [c++,glut]
+private: true
 ---
 
 La manera en la que **OpenGL** dibuja las cosas es en base a **primitivas** que pueden ser puntos, segmentos de linea y poligonos.
