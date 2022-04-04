@@ -3,7 +3,7 @@ author: pro-panda
 subtitle: The life of a frustrated engineer
 
 url: "https://debiantano.github.io"
-baseurl: "/test"
+baseurl: "/v2"
 
 footer_only_homepage: true
 footer_url: "https://github.com/debiantano/test"
