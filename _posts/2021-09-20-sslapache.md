@@ -94,7 +94,7 @@ Para ello debajo de `SSLEngine on` tendremos que escribir estas 3 líneas en fic
 #   Enable/Disable SSL for this virtual host.
 SSLEngine on
 SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
-SSLCertificateKeyFile /etc/ssl/certs/miCertificadoFirmado.crt
+SSLCertificateFile /etc/ssl/certs/miCertificadoFirmado.crt
 SSLCertificateKeyFile /etc/ssl/private/LLaveSSL.key
 #   A self-signed (snakeoil) certificate can be created by installing
 #   the ssl-cert package. See
